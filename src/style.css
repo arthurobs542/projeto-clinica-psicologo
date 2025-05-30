@@ -1,0 +1,334 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgba(165, 196, 205, 0.635);
+}
+
+header .btn-contato button,
+.hero-site .txt-hero button {
+  font-size: 16px;
+  background-color: rgb(80, 168, 246);
+  border: 2px solid white;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 10px;
+  color: white;
+}
+
+header .btn-contato button:hover,
+.hero-site .txt-hero button:hover {
+  background-color: rgb(21, 140, 245);
+  color: rgba(0, 0, 0, 0.611);
+  border: 2px solid rgba(0, 0, 0, 0.141);
+}
+/* estilo header */
+
+header {
+  width: 100%;
+  display: flex;
+  background-color: rgb(139, 198, 249);
+  justify-content: center;
+  position: fixed;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.conteiner-div-header {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 70px;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+}
+/* ________________________ */
+
+/* estilo hero */
+
+section.hero-site {
+  height: 98vh;
+  background-image: url(../src/img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.hero-site .interface {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.hero-site .txt-hero {
+  padding-top: 100px;
+  width: 50%;
+}
+
+.hero-site .txt-hero h1 {
+  font-size: 3rem;
+  line-height: 60px;
+  color: white;
+  font-weight: 500;
+}
+
+.hero-site .txt-hero h1 span {
+  color: rgb(21, 140, 245);
+  display: block;
+  font-weight: 700;
+}
+
+.hero-site .txt-hero p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.hero-site .txt-hero button {
+  width: 220px;
+  height: 60px;
+  font-size: 1.7rem;
+  margin-top: 20px;
+  /* background-color: rgb(80, 168, 246);
+  border: 2px solid white;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 10px;
+  color: white;
+   */
+}
+
+/* estilo especialidades */
+
+section.especialidades {
+  padding: 80px;
+  background-color: #f5f5f5;
+}
+
+.especialidades .itens-conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10%;
+  margin-bottom: 60px;
+  border: #02238f1d 10px solid;
+  border-radius: 10px;
+}
+
+.especialidades .itens-conteiner .img-itens img {
+  max-width: 420px;
+  margin: 7px 7px;
+  border-radius: 10px;
+}
+
+.especialidades .itens-conteiner .txt-itens {
+  margin: 0 7px;
+}
+
+.especialidades .itens-conteiner .txt-itens h2 {
+  font-size: 2rem;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.especialidades .itens-conteiner .txt-itens p {
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+/* estilo Contato */
+
+section.contato {
+  padding: 80px;
+  background-color: #fff;
+}
+
+.txt-contato,
+.icons-contato {
+  display: inline-block;
+  width: 50%;
+  margin-right: -4px;
+  vertical-align: middle;
+}
+
+.contato .txt-contato h2 {
+  font-size: 2.5em;
+  line-height: 50px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.contato .txt-contato h2 span {
+  font-weight: 700;
+  display: block;
+}
+
+.contato .icons-contato a {
+  text-decoration: none;
+}
+
+.contato .icons-contato button {
+  display: flex;
+  width: 50%;
+  height: 60px;
+  margin: 0 auto 20px auto;
+  font-size: 1.2rem;
+  color: rgb(18, 84, 142);
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 0 60px;
+  border: 2px solid rgb(80, 168, 246);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.contato .icons-contato button i {
+  font-size: 25px;
+}
+
+.contato .icons-contato button:hover {
+  background-color: rgb(80, 168, 246);
+  color: white;
+}
+/* ------------ */
+
+/* Estilo Depoimentos */
+
+section.depoimentos {
+  padding: 80px;
+  background-color: #f5f5f5;
+}
+
+section .txt-depoimento h3 {
+  font-size: 2.5rem;
+  line-height: 40px;
+  font-weight: 300;
+}
+
+section .txt-depoimento h3 span {
+  font-weight: 700;
+  display: block;
+}
+
+.txt-depoimento,
+.depo {
+  display: inline-block;
+  width: 50%;
+  margin-right: -4px;
+  vertical-align: middle;
+}
+
+.depoimentos .txt-depoimento {
+  position: sticky;
+  top: 50%;
+  margin-bottom: -70;
+}
+
+.depo .depo-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 5px solid #49507ad2;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.depo .depo-box img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.depo .depo-box h2 {
+  font-size: 1.5rem;
+  line-height: 30px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.depo .depo-box i {
+  font-size: 20px;
+  color: rgba(255, 200, 0, 0.861);
+}
+
+.depo .depo-box p {
+  line-height: 20px;
+}
+/* ------------------ */
+
+/* estilo footer */
+
+footer {
+  background-color: #082149;
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+footer .top-footer button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+footer .top-footer button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+footer .middle-footer {
+  padding: 10px 0;
+}
+
+footer .middle-footer a {
+  color: #fff;
+  margin: 0 15px;
+}
+
+footer .bottom-footer {
+  border-top: 2px solid #fff;
+}
+
+footer .bottom-footer {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.backhome {
+  position: sticky;
+  right: 10px;
+  max-width: 100px;
+  cursor: pointer;
+}
