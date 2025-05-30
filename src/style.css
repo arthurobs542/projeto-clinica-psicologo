@@ -9,9 +9,10 @@ body {
   background-color: rgba(165, 196, 205, 0.635);
 }
 
-header .btn-contato button,
-.hero-site .txt-hero button {
-  font-size: 16px;
+header .btn-contato a button,
+.hero-site .txt-hero a button {
+  font-size: 1.5rem;
+  padding: 0.2rem 1rem;
   background-color: rgb(80, 168, 246);
   border: 2px solid white;
   cursor: pointer;
@@ -20,8 +21,8 @@ header .btn-contato button,
   color: white;
 }
 
-header .btn-contato button:hover,
-.hero-site .txt-hero button:hover {
+header .btn-contato a button:hover,
+.hero-site .txt-hero a button:hover {
   background-color: rgb(21, 140, 245);
   color: rgba(0, 0, 0, 0.611);
   border: 2px solid rgba(0, 0, 0, 0.141);
@@ -45,9 +46,11 @@ header {
 }
 
 #logo {
-  width: 70px;
+  cursor: pointer;
+  width: 60px;
   border: 1px solid white;
   border-radius: 50px;
+  margin: 5px 0;
 }
 
 header nav ul {
@@ -61,8 +64,20 @@ header nav ul li {
 }
 
 header nav ul li a {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  transition: 0.2s;
+  font-weight: 600;
   text-decoration: none;
 }
+
+header nav ul li a:hover {
+  font-size: 1.6rem;
+  color: rgb(21, 140, 245);
+  border-bottom: 2px solid rgb(21, 140, 245);
+}
+
 /* ________________________ */
 
 /* estilo hero */
@@ -76,20 +91,23 @@ section.hero-site {
   color: #fff;
 }
 
-.hero-site .interface {
+.hero-site {
   display: flex;
   justify-content: center;
   height: 100%;
 }
 
 .hero-site .txt-hero {
-  padding-top: 100px;
+  padding-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   width: 50%;
 }
 
 .hero-site .txt-hero h1 {
-  font-size: 3rem;
-  line-height: 60px;
+  font-size: 4rem;
+  line-height: 5rem;
   color: white;
   font-weight: 500;
 }
@@ -104,21 +122,11 @@ section.hero-site {
   color: rgb(255, 255, 255);
   font-size: 20px;
   text-align: justify;
-  margin-top: 20px;
 }
 
-.hero-site .txt-hero button {
-  width: 220px;
-  height: 60px;
-  font-size: 1.7rem;
-  margin-top: 20px;
-  /* background-color: rgb(80, 168, 246);
-  border: 2px solid white;
-  cursor: pointer;
-  transition: 0.5s;
-  border-radius: 10px;
-  color: white;
-   */
+.hero-site .txt-hero a {
+  margin-top: -4rem;
+  font-size: 2rem;
 }
 
 /* estilo especialidades */
