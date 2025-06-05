@@ -34,15 +34,18 @@
       </nav>
 
       <!-- nav mobile -->
-      <div class="conteiner-nav-mobile"></div>
-      <nav class="menu-nav-mobile">
-        <ul>
-          <li><a href="#hero">Inicio</a></li>
-          <li><a href="#especialidades">Especialidades</a></li>
-          <li><a href="#contato">Contatos</a></li>
-          <li><a href="#Depoimentos">Depoimentos</a></li>
-        </ul>
-      </nav>
+      <div class="conteiner-nav-mobile">
+        <i class="bi bi-list btn-mobile"></i>
+        <nav class="menu-nav-mobile">
+          <ul>
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#contato">Contatos</a></li>
+            <li><a href="#Depoimentos">Depoimentos</a></li>
+          </ul>
+        </nav>
+      </div>
+
       <section class="btn-contato">
         <a href="#"><button>Saiba Mais</button></a>
       </section>
@@ -78,17 +81,21 @@
             </p>
           </div>
 
-          <div class="img-itens">
-            <img src="src/img/depre.jpg" alt="Depressão" />
-          </div>
+          <img
+            src="src/img/depre.jpg"
+            alt="Depressão"
+            class="img-itens-especialidades"
+          />
         </article>
         <!-- final artigo -->
 
         <!-- 2 especialidade -->
         <article class="itens-conteiner">
-          <div class="img-itens">
-            <img src="src/img/burn-out.jpg" alt="burn-out" />
-          </div>
+          <img
+            src="src/img/burn-out.jpg"
+            alt="burn-out"
+            class="img-itens-especialidades"
+          />
 
           <div class="txt-itens">
             <h2>Burn Out</h2>
@@ -113,18 +120,21 @@
             </p>
           </div>
 
-          <div class="img-itens">
-            <img src="src/img/casal.jpg" alt="Terapia de casal" />
-          </div>
+          <img
+            src="src/img/casal.jpg"
+            alt="Terapia de casal"
+            class="img-itens-especialidades"
+          />
         </article>
         <!-- ---------- -->
 
         <!-- 4 especilidade -->
         <article class="itens-conteiner">
-          <div class="img-itens">
-            <img src="src/img/ocupacional.jpg" alt="Depressão" />
-          </div>
-
+          <img
+            src="src/img/ocupacional.jpg"
+            alt="Depressão"
+            class="img-itens-especialidades"
+          />
           <div class="txt-itens">
             <h2>Terapia ocupacional</h2>
             <p>
@@ -143,11 +153,11 @@
 
     <!-- CONTATOS -->
     <section class="contato" id="contato">
-      <div class="interface">
+      <div class="conteiner-div-contato">
         <article class="txt-contato">
           <h2>Fale agora com <span>nossa equipe</span></h2>
         </article>
-
+        <h2 id="header-contato">Contatos</h2>
         <article class="icons-contato">
           <a href="#">
             <button>
@@ -182,7 +192,7 @@
     <!-- DEPOIMENTOS -->
 
     <section class="depoimentos" id="Depoimentos">
-      <div class="interface">
+      <div class="conteiner-div-depoimentos">
         <div class="txt-depoimento">
           <h3>Depoimentos de <span>nossos pacientes</span></h3>
         </div>
