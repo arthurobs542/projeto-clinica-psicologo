@@ -27,10 +27,35 @@ header .btn-contato a button:hover,
   color: rgba(0, 0, 0, 0.611);
   border: 2px solid rgba(0, 0, 0, 0.141);
 }
+
+@media screen and (max-width: 1000px) {
+  header .btn-contato a button,
+  .hero-site .txt-hero a button {
+    font-size: 1.3rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  header .btn-contato a button:hover,
+  .hero-site .txt-hero a button:hover {
+    background-color: rgb(21, 140, 245);
+    color: rgba(0, 0, 0, 0.611);
+    border: 2px solid rgba(0, 0, 0, 0.141);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header .btn-contato a button,
+  .hero-site .txt-hero a button {
+    font-size: 1.1rem;
+    padding: 0.2rem 0.5rem;
+  }
+}
+
 /* estilo header */
 
 header {
   width: 100%;
+  height: 5rem;
   display: flex;
   background-color: rgb(139, 198, 249);
   justify-content: center;
@@ -53,6 +78,10 @@ header {
   margin: 5px 0;
 }
 
+.conteiner-nav-mobile {
+  display: none;
+}
+
 header nav ul {
   display: flex;
   justify-content: space-between;
@@ -68,14 +97,58 @@ header nav ul li a {
   font-family: "Roboto", sans-serif;
   color: #fff;
   transition: 0.2s;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
 }
 
 header nav ul li a:hover {
   font-size: 1.6rem;
   color: rgb(21, 140, 245);
-  border-bottom: 2px solid rgb(21, 140, 245);
+}
+
+@media screen and (max-width: 1000px) {
+  header nav ul {
+    gap: 1.5rem;
+  }
+  header nav ul li a {
+    font-size: 1.3rem;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    transition: 0.2s;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  header nav ul li a:hover {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header nav ul {
+    gap: 1rem;
+  }
+  header nav ul li a {
+    font-size: 1.1rem;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    transition: 0.2s;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  header nav ul li a:hover {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .conteiner-nav-mobile {
+    display: flex;
+  }
+  header nav {
+    display: none;
+  }
 }
 
 /* ________________________ */
@@ -98,14 +171,16 @@ section.hero-site {
 }
 
 .hero-site .txt-hero {
-  padding-top: 15rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 1rem;
   width: 50%;
 }
 
 .hero-site .txt-hero h1 {
+  width: 100%;
   font-size: 4rem;
   line-height: 5rem;
   color: white;
@@ -121,25 +196,60 @@ section.hero-site {
 .hero-site .txt-hero p {
   color: rgb(255, 255, 255);
   font-size: 20px;
-  text-align: justify;
 }
 
 .hero-site .txt-hero a {
   margin-top: 1rem;
   font-size: 2rem;
 }
+
+@media screen and (max-width: 1000px) {
+  /* estilo da hero screen 1000px */
+
+  .hero-site .txt-hero h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: white;
+    font-weight: 500;
+  }
+
+  .hero-site .txt-hero h1 span {
+    color: rgb(21, 140, 245);
+    display: block;
+    font-weight: 700;
+  }
+
+  .hero-site .txt-hero p {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+  }
+
+  .hero-site .txt-hero a button {
+    font-size: 1.5rem;
+  }
+}
+
 /* estilo especialidades */
 
-section.especialidades {
-  padding: 80px;
+.especialidades {
   background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteiner-div-especialidades {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  width: 80%;
 }
 
 .especialidades .itens-conteiner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10%;
+  gap: 3rem;
   margin-bottom: 60px;
   border: #02238f1d 10px solid;
   border-radius: 10px;
@@ -162,10 +272,47 @@ section.especialidades {
 }
 
 .especialidades .itens-conteiner .txt-itens p {
-  text-align: justify;
+  text-align: left;
   font-size: 1.2rem;
   line-height: 25px;
 }
+
+@media screen and (max-width: 800px) {
+  .conteiner-div-especialidades {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 80%;
+  }
+
+  .especialidades .itens-conteiner {
+    gap: 2rem;
+    border: #02238f1d 6px solid;
+    border-radius: 10px;
+  }
+
+  .especialidades .itens-conteiner .img-itens img {
+    width: 300px;
+    height: auto;
+    margin: 7px 7px;
+    border-radius: 10px;
+  }
+
+  .especialidades .itens-conteiner .txt-itens {
+    margin: 0 7px;
+    padding: 1rem;
+  }
+
+  .especialidades .itens-conteiner .txt-itens h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .especialidades .itens-conteiner .txt-itens p {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+}
+
 /* estilo Contato */
 
 section.contato {
@@ -207,19 +354,47 @@ section.contato {
   align-items: center;
   justify-content: space-between;
   background-color: transparent;
-  padding: 0 60px;
+  padding: 20px;
   border: 2px solid rgb(80, 168, 246);
   cursor: pointer;
   transition: 0.5s;
 }
 
 .contato .icons-contato button i {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .contato .icons-contato button:hover {
   background-color: rgb(80, 168, 246);
   color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .contato .txt-contato h2 {
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  .contato .icons-contato a {
+    text-decoration: none;
+  }
+
+  .contato .icons-contato button {
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
+  .contato .icons-contato button i {
+    font-size: 20px;
+  }
+
+  .contato .icons-contato button:hover {
+    background-color: rgb(80, 168, 246);
+    color: white;
+  }
 }
 /* ------------ */
 
@@ -329,7 +504,8 @@ footer .bottom-footer {
 }
 
 footer .bottom-footer {
-  margin-top: 10px;
+  margin-top: 20px;
+  padding-top: 20px;
   color: #fff;
 }
 
